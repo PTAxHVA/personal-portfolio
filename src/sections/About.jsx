@@ -29,8 +29,8 @@ const highlights = [
 
 const About = () => {
     return (
-        <section id="about" className="relative overflow-hidden py-32 px-6">
-            <div className="container mx-ato px-6 relative z-10">
+        <section id="about" className="relative py-32 px-6 overflow-hidden">
+            <div className="container mx-auto px-6 relative z-10">
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
                     {/* Left Column */}
                     <div className="space-y-8">
@@ -94,8 +94,12 @@ const About = () => {
                                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex justify-center items-center mb-4 hover:bg-primary/20">
                                     <item.icon className="w-6 h-6 text-primary"></item.icon>
                                 </div>
-                                <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
-                                <p className="text-sm text-muted-foreground">{item.description}</p>
+                                <h3 className="text-lg font-semibold mb-2">
+                                    {item.title}
+                                </h3>
+                                <p className="text-sm text-muted-foreground">
+                                    {item.description}
+                                </p>
                             </div>
                         ))}
                     </div>
