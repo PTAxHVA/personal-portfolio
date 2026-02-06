@@ -22,10 +22,16 @@ const skills = [
     "React",
     "Javascript",
     "Tailwind CSS",
-    "Bootstrap",
+    "Python",
     "HTML",
     "CSS",
     "TypeScript",
+    "NumPy",
+    "Pandas",
+    "Matplotlib",
+    "scikit-learn",
+    "Git/GitHub",
+    "Figma"
 ];
 
 const Hero = () => {
@@ -66,7 +72,7 @@ const Hero = () => {
                         <div className="animate-fade-in">
                             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
                                 <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-                                College Student • Computer Science
+                                Computer Science Student • AI & Web Development
                             </span>
                         </div>
 
@@ -87,23 +93,31 @@ const Hero = () => {
 
                             <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
                                 Hi, I’m Pham Tuan Anh — a Computer Science
-                                student focused on Artificial Intelligence and
-                                full-stack web development. I build clean,
-                                scalable web apps and I’m always learning by
-                                shipping real projects.
+                                student at HCMUT. I focus on AI engineer and
+                                fullstack web development, and I learn by
+                                shipping real projects: research team websites,
+                                student apps, and clean UI components.
                             </p>
                         </div>
 
                         {/* Call to action button */}
                         <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
-                            <Button size="lg">
-                                Contact me <ArrowRight className="w-5 h-5" />
-                            </Button>
+                            <a href="#contact">
+                                <Button size="lg">
+                                    Contact me{" "}
+                                    <ArrowRight className="w-5 h-5" />
+                                </Button>
+                            </a>
 
-                            <AnimatedBorderButton>
-                                <Download className="w-5 h-5" />
-                                Download CV
-                            </AnimatedBorderButton>
+                            <a
+                                href="Tuan_Anh_Resume.pdf"
+                                download="Pham Tuan Anh's resume"
+                            >
+                                <AnimatedBorderButton>
+                                    <Download className="w-5 h-5" />
+                                    Download CV
+                                </AnimatedBorderButton>
+                            </a>
                         </div>
 
                         {/* Social links */}
@@ -112,13 +126,23 @@ const Hero = () => {
                                 Follow me:{" "}
                             </span>
                             {[
-                                { icon: Github, href: "#" },
-                                { icon: Facebook, href: "#" },
-                                { icon: Linkedin, href: "#" },
+                                {
+                                    icon: Github,
+                                    href: "https://github.com/PTAxHVA?tab=repositories",
+                                },
+                                {
+                                    icon: Facebook,
+                                    href: "https://www.facebook.com/pham.tuan.anh.767010",
+                                },
+                                {
+                                    icon: Linkedin,
+                                    href: "https://www.linkedin.com/in/ph%E1%BA%A1m-tu%E1%BA%A5n-anh-1513b2392/",
+                                },
                             ].map((social, index) => (
                                 <a
                                     key={index}
                                     href={social.href}
+                                    target="_blank"
                                     className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
                                 >
                                     <social.icon className="w-5 h-5" />
@@ -145,18 +169,19 @@ const Hero = () => {
                                     <div className="flex items-center gap-3">
                                         <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse" />
                                         <span className="text-sm font-medium">
-                                            Available for work
+                                            Available for internships /
+                                            part-time roles
                                         </span>
                                     </div>
                                 </div>
 
                                 {/* Stats Badge */}
                                 <div className="absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500">
-                                    <div className="text-2xl font-bold text-primary">
-                                        0+
+                                    <div className="text-xl font-normal text-primary italic">
+                                        Student
                                     </div>
                                     <div className="text-xs text-muted-foreground">
-                                        Years Exp.
+                                        Open to internships
                                     </div>
                                 </div>
                             </div>

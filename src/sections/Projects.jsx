@@ -4,40 +4,31 @@ import AnimatedBorderButton from "@/components/AnimatedBorderButton";
 
 const projects = [
     {
-        title: "Fintech Dashboard",
+        title: "URA Research Group Website",
         description:
-            "A comprehensive financial analytics platform with real-time data visualization, portfolio management, and AI-powered insights.",
-        image: "/projects/project1.png",
-        tags: ["React", "Typescript", "NodeJS"],
-        link: "#",
-        github: "#",
+            "Lead the UI design in Figma and built the front-end pages for the research group website, focusing on clean layout and readability.",
+        image: "/projects/project1.jpg",
+        tags: ["HTML", "CSS", "JavaScript", "Figma"],
+        link: "https://ura.hcmut.edu.vn/",
+        github: "https://github.com/PTAxHVA/web",
     },
     {
-        title: "E-Commerce Platform",
+        title: "Lost and Found Station (Team Project)",
         description:
-            "A full-featured e-commerce solution with inventory management, payment processing, and analytics dashboard.",
-        image: "/projects/project2.png",
-        tags: ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
+            "Built the front-end interface for reporting and searching lost items, including key sections and navigation for a clear workflow.",
+        image: "/projects/project2.jpg",
+        tags: ["React", "Taailwind CSS", "Typescript"],
         link: "#",
-        github: "#",
+        github: "https://github.com/PTAxHVA/lost-and-found-station-fe",
     },
     {
-        title: "AI Writing Assistant",
+        title: "Personal Portfolio Website",
         description:
-            "An intelligent writing tool powered by GPT-4, helping users create better content faster.",
-        image: "/projects/project3.png",
-        tags: ["React", "OpenAI", "Python", "FastAPI"],
-        link: "#",
-        github: "#",
-    },
-    {
-        title: "Project Management Tool",
-        description:
-            "A collaborative workspace for teams with real-time updates, task tracking, and integrations.",
-        image: "/projects/project4.png",
-        tags: ["Next.js", "Socket.io", "MongoDB", "Redis"],
-        link: "#",
-        github: "#",
+            "A responsive portfolio to showcase my projects, research experience, and contact info with reusable components and a consistent dark theme.",
+        image: "/projects/project3.jpg",
+        tags: ["React", "Taailwind CSS", "Javascript"],
+        link: "https://personal-portfolio-eight-liard-49.vercel.app/",
+        github: "https://github.com/PTAxHVA/personal-portfolio",
     },
 ];
 
@@ -62,9 +53,9 @@ const Projects = () => {
                     </h2>
 
                     <p className="text-muted-foreground animate-fade-in animation-delay-200">
-                        A selection of my recent work, from complex web
-                        applications to innovative tools that solve real-world
-                        problems.
+                        A few projects I built at university and in my research
+                        group — focused on UI clarity, teamwork, and practical
+                        delivery.
                     </p>
                 </div>
 
@@ -94,12 +85,14 @@ const Projects = () => {
                                 <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 hover:opacity-100 transition-300">
                                     <a
                                         href={proj.link}
+                                        target="_blank"
                                         className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
                                     >
                                         <ArrowUpRight className="w-5 h-5" />
                                     </a>
                                     <a
                                         href={proj.github}
+                                        target="_blank"
                                         className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
                                     >
                                         <Github className="w-5 h-5" />
@@ -139,12 +132,17 @@ const Projects = () => {
                 </div>
 
                 {/* View all projects */}
-                <div className="text-center mt-12 animate-fade-in animation-delay-500">
-                    <AnimatedBorderButton>
-                        View All Projects
-                        <ArrowUpRight className="w-5 h-5" />
-                    </AnimatedBorderButton>
-                </div>
+                <a
+                    href="https://github.com/PTAxHVA?tab=repositories"
+                    target="_blank"
+                >
+                    <div className="text-center mt-12 animate-fade-in animation-delay-500">
+                        <AnimatedBorderButton>
+                            View All Projects
+                            <ArrowUpRight className="w-5 h-5" />
+                        </AnimatedBorderButton>
+                    </div>
+                </a>
             </div>
         </section>
     );
