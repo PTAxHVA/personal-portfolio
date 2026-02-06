@@ -115,8 +115,9 @@ const Contact = () => {
                         </span>
                     </h2>
                     <p className="text-muted-foreground animate-fade-in animation-delay-200">
-                        Have a project in mind? I'd love to hear about it. Send
-                        me a message and let's discuss how we can work together.
+                        Have a project idea, an internship opportunity, or want
+                        to collaborate? Send me a message — I usually reply
+                        within 24–48 hours.
                     </p>
                 </div>
 
